@@ -6,8 +6,14 @@ def hello(name)
 end
 
 # Part II
-def starts_with_consonant? s
-  # YOUR CODE HERE
+def starts_with_consonant?(s)
+	if s =~ /^[^aeiouAEIOU].*/
+		return true
+	elsif s[0] =~ /(\W|\d).*/
+		return false
+	else
+		return false
+	end
 end
 
 # Part III
