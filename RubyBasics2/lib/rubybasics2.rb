@@ -17,6 +17,12 @@ def starts_with_consonant?(s)
 end
 
 # Part III
-def binary_multiple_of_4? s
-  # YOUR CODE HERE
+def binary_multiple_of_4?(s)
+	if s == 0
+		return true 
+	elsif s.to_s =~ /^01|10*/ 
+		return true
+	else
+		return false
+	end
 end
